@@ -18,10 +18,28 @@ A comprehensive Laravel package for managing testimonials with advanced features
 
 ## Installation
 
+### Via Packagist (Recommended)
+
+```bash
+composer require samkumar/laravel-testimonials
+```
+
+Or for development version:
+
+```bash
+composer require samkumar/laravel-testimonials:dev-master
+```
+
+### From GitHub (Alternative)
+
+```bash
+composer require samkumar/laravel-testimonials:dev-main --dev
+```
+
 ### 1. Install the Package
 
 ```bash
-composer require samkumar/testimonials
+composer require samkumar/laravel-testimonials
 ```
 
 ### 2. Publish Configuration

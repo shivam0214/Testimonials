@@ -1,13 +1,22 @@
 {
-  "name": "samkumar/testimonials",
-  "description": "Advanced Laravel Testimonials Package with API, Blade views, Spatie Permissions, and more",
+  "name": "samkumar/laravel-testimonials",
+  "type": "library",
+  "description": "Advanced Laravel Testimonials Package with API, Blade views, Spatie Permissions, photos, ratings, and more",
+  "keywords": ["laravel", "testimonials", "reviews", "api", "blade", "permissions", "spatie", "ratings"],
+  "homepage": "https://github.com/YOUR_USERNAME/laravel-testimonials",
   "license": "MIT",
   "authors": [
     {
-      "name": "Your Name",
-      "email": "your.email@example.com"
+      "name": "Sam Kumar",
+      "email": "your.email@example.com",
+      "homepage": "https://github.com/YOUR_USERNAME",
+      "role": "Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/YOUR_USERNAME/laravel-testimonials/issues",
+    "source": "https://github.com/YOUR_USERNAME/laravel-testimonials"
+  },
   "require": {
     "php": "^8.1",
     "laravel/framework": "^10.0 || ^11.0",
@@ -15,6 +24,7 @@
   },
   "require-dev": {
     "laravel/pint": "^1.13",
+    "orchestra/testbench": "^8.0 || ^9.0",
     "phpunit/phpunit": "^10.0"
   },
   "autoload": {
@@ -22,6 +32,17 @@
       "samkumar\\Testimonials\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "samkumar\\Testimonials\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "format": "pint"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "extra": {
     "laravel": {
       "providers": [
